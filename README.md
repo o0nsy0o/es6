@@ -278,7 +278,7 @@ set数据结构类似于数组，但是里面不会有任何相同的值。
 这让我第一时间想到的就是，我们的数组去重，再也不用写那么多遍历了。
 ```
 const theset = new set();//set本身是一个构造器，构造器需要使用new操作符。
-[1,2,3,4,5,5,6,6,7,7,7,7].each((item)=theset.add>(item));
+[1,2,3,4,5,5,6,6,7,7,7,7].each((item)=>theset.add(item));
 for (let i of theset) {
   console.log(i);
 }//1,2,3,4,5,6,7
